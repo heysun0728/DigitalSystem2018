@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Jun  4 18:03:20 2018
+# Process ID: 6848
+# Current directory: D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8116 D:\CCU\DigitalSys\DDlab12\Lab12DemoV1.0_3\Lab12Demo.xpr
+# Log file: D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/vivado.log
+# Journal file: D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.xpr
+add_files -norecurse {D:/CCU/DigitalSys/DDlab12/Testzone3/fp_reg_cal_norm.v D:/CCU/DigitalSys/DDlab12/Testzone3/fp_cal.v D:/CCU/DigitalSys/DDlab12/Testzone3/fp_norm.v D:/CCU/DigitalSys/DDlab12/Testzone3/fp_adder.v D:/CCU/DigitalSys/DDlab12/Testzone3/fp_align.v D:/CCU/DigitalSys/DDlab12/Testzone3/fp_reg_align_cal.v}
+set_property STEPS.WRITE_BITSTREAM.TCL.PRE {D:\CCU\DigitalSys\DDlab12\Testzone3\mytcl.tcl} [get_runs impl_1]
+update_ip_catalog
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+close_hw
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+open_run synth_1 -name synth_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw

@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Jun  3 11:22:19 2018
+# Process ID: 9728
+# Current directory: D:/いタ/计╰参/DDlab12/Lab12DemoV1.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12820 D:\いタ\计╰参\DDlab12\Lab12DemoV1.0\Lab12Demo.xpr
+# Log file: D:/いタ/计╰参/DDlab12/Lab12DemoV1.0/vivado.log
+# Journal file: D:/いタ/计╰参/DDlab12/Lab12DemoV1.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/いタ/计╰参/DDlab12/Lab12DemoV1.0/Lab12Demo.xpr
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/いタ/计╰参/DDlab12/Lab12DemoV1.0/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/いタ/计╰参/DDlab12/Lab12DemoV1.0/Lab12Demo.runs/impl_1/system.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]

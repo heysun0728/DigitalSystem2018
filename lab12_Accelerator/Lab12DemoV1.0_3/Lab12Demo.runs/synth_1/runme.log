@@ -1,0 +1,2393 @@
+
+*** Running vivado
+    with args -log system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source system.tcl -notrace
+Command: synth_design -top system -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2576 
+WARNING: [Synth 8-992] clk_out is already implicitly declared earlier [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/accelerator.v:124]
+WARNING: [Synth 8-2490] overwriting previous definition of module multiplication_normaliser [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplication_normaliser.v:1]
+WARNING: [Synth 8-2490] overwriting previous definition of module multiplier [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplier.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module multiplication_normaliser [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplication_normaliser.v:1]
+WARNING: [Synth 8-2490] overwriting previous definition of module fadd_cal [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_cal.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module fadd_norm [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_norm.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module reg_cal_norm [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_reg_cal_norm.v:21]
+WARNING: [Synth 8-2490] overwriting previous definition of module fadd_align [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_align.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module reg_align_cal [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_reg_align_cal.v:21]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 459.391 ; gain = 112.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+INFO: [Synth 8-6157] synthesizing module 'system_vga_flyinglogo_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:3032]
+INFO: [Synth 8-6155] done synthesizing module 'system_vga_flyinglogo_0_wrapper' (1#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:3032]
+INFO: [Synth 8-6157] synthesizing module 'system_util_vector_logic_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:3049]
+INFO: [Synth 8-6155] done synthesizing module 'system_util_vector_logic_0_wrapper' (2#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:3049]
+INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:3060]
+INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_wrapper' (3#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:3060]
+INFO: [Synth 8-6157] synthesizing module 'system_clock_generator_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:4413]
+INFO: [Synth 8-6155] done synthesizing module 'system_clock_generator_0_wrapper' (4#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:4413]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_vdma_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:4468]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_vdma_0_wrapper' (5#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:4468]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_spdif_tx_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:4665]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_spdif_tx_0_wrapper' (6#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:4665]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_3_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:4726]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_3_wrapper' (7#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:4726]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_2_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:5139]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_2_wrapper' (8#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:5139]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_1_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:5552]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_1_wrapper' (9#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:5552]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:5965]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_0_wrapper' (10#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:5965]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_iic_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:6378]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_iic_0_wrapper' (11#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:6378]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_hdmi_tx_16b_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:6437]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_hdmi_tx_16b_0_wrapper' (12#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:6437]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_dma_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:6518]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_dma_0_wrapper' (13#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:6518]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_clkgen_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:6733]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_clkgen_0_wrapper' (14#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:6733]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_ahblite_bridge_0_wrapper' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:6780]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_ahblite_bridge_0_wrapper' (15#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:6780]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:22659]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (16#1) [D:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:22659]
+INFO: [Synth 8-6157] synthesizing module 'MYIP_TOP' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/MYIP_TOP.v:1]
+	Parameter TRN_IDLE bound to: 2'b00 
+	Parameter TRN_BUSY bound to: 2'b01 
+	Parameter TRN_NONSEQ bound to: 2'b10 
+	Parameter TRN_SEQ bound to: 2'b11 
+	Parameter RSP_OKAY bound to: 2'b00 
+	Parameter RSP_ERROR bound to: 2'b01 
+	Parameter RSP_RETRY bound to: 2'b10 
+	Parameter RSP_SPLIT bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'accelerator' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/accelerator.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fpu' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/FP_MPY.v:4]
+INFO: [Synth 8-6157] synthesizing module 'multiplier' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplier.v:3]
+INFO: [Synth 8-6157] synthesizing module 'multiplication_normaliser' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplication_normaliser.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'multiplication_normaliser' (17#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplication_normaliser.v:1]
+WARNING: [Synth 8-3936] Found unconnected internal register 'o_mantissa_reg' and it is trimmed from '25' to '23' bits. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplier.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier' (18#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplier.v:3]
+WARNING: [Synth 8-6014] Unused sequential element adder_a_in_reg was removed.  [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/FP_MPY.v:94]
+WARNING: [Synth 8-6014] Unused sequential element adder_b_in_reg was removed.  [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/FP_MPY.v:95]
+WARNING: [Synth 8-6014] Unused sequential element divider_a_in_reg was removed.  [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/FP_MPY.v:124]
+WARNING: [Synth 8-6014] Unused sequential element divider_b_in_reg was removed.  [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/FP_MPY.v:125]
+WARNING: [Synth 8-3848] Net adder_out in module/entity fpu does not have driver. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/FP_MPY.v:23]
+WARNING: [Synth 8-3848] Net divider_out in module/entity fpu does not have driver. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/FP_MPY.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'fpu' (19#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/FP_MPY.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mem' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/memory.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mem' (20#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pipelined_fpadder' [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_adder.v:7]
+INFO: [Synth 8-6157] synthesizing module 'fadd_align' [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_align.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fadd_align' (21#1) [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_align.v:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_align_cal' [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_reg_align_cal.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'reg_align_cal' (22#1) [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_reg_align_cal.v:21]
+INFO: [Synth 8-6157] synthesizing module 'fadd_cal' [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_cal.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fadd_cal' (23#1) [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_cal.v:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_cal_norm' [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_reg_cal_norm.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'reg_cal_norm' (24#1) [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_reg_cal_norm.v:21]
+INFO: [Synth 8-6157] synthesizing module 'fadd_norm' [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_norm.v:3]
+INFO: [Synth 8-226] default block is never used [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_norm.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'fadd_norm' (25#1) [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_norm.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pipelined_fpadder' (26#1) [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_adder.v:7]
+INFO: [Synth 8-6157] synthesizing module 'clkwiz0' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/synth_1/.Xil/Vivado-14228-MSI/realtime/clkwiz0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clkwiz0' (27#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/synth_1/.Xil/Vivado-14228-MSI/realtime/clkwiz0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clkgene' of module 'clkwiz0' requires 4 connections, but only 2 given [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/accelerator.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'accelerator' (28#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/accelerator.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'MYIP_TOP' (29#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/MYIP_TOP.v:1]
+WARNING: [Synth 8-689] width (4) of port connection 'hsize' does not match port width (3) of module 'MYIP_TOP' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:3018]
+WARNING: [Synth 8-689] width (1) of port connection 'hresp_es1' does not match port width (2) of module 'MYIP_TOP' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:3026]
+INFO: [Synth 8-6155] done synthesizing module 'system' (30#1) [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[31]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[30]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[29]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[28]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[27]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[26]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[25]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[24]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[23]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[22]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[21]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[20]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[19]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[18]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[17]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[16]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[15]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[14]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[13]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[12]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[11]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[10]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[9]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[8]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[1]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[0]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port htrans[1]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port htrans[0]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hsize[2]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hsize[1]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hsize[0]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hburst[2]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hburst[1]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hburst[0]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[31]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[30]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[29]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[28]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[27]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[26]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[25]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[24]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[23]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[22]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[21]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[20]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[19]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[18]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[17]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[16]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[15]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[14]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[13]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[12]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[11]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[10]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[9]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[8]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[7]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[6]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[5]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[4]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[3]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[2]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[1]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hrdata[0]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hready
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hresp[1]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hresp[0]
+WARNING: [Synth 8-3331] design MYIP_TOP has unconnected port hsel_es1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 511.266 ; gain = 164.078
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 511.266 ; gain = 164.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 511.266 ; gain = 164.078
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/ip/clkwiz0/clkwiz0/clkwiz0_in_context.xdc] for cell 'MYIP_TOP_0/accelerator/clkgene'
+Finished Parsing XDC File [d:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/ip/clkwiz0/clkwiz0/clkwiz0_in_context.xdc] for cell 'MYIP_TOP_0/accelerator/clkgene'
+Parsing XDC File [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/constrs_1/imports/project_1/system.xdc]
+Finished Parsing XDC File [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/constrs_1/imports/project_1/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/constrs_1/imports/project_1/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 62 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 62 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 896.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 896.402 ; gain = 549.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 896.402 ; gain = 549.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for MYIP_TOP_0/accelerator/clkgene. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 896.402 ; gain = 549.215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "out_e" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplier.v:58]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_align.v:47]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/CCU/DigitalSys/DDlab12/Testzone3/fp_cal.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'out_e_reg' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplication_normaliser.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'out_m_reg' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplication_normaliser.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'i_e_reg' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplier.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'i_m_reg' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/LAB 12 FPU/multiplier.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'aout' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/accelerator.v:93]
+WARNING: [Synth 8-327] inferring latch for variable 'adderin2' [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/accelerator.v:95]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 896.402 ; gain = 549.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     28 Bit       Adders := 1     
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 8     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               28 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 2     
+	               23 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     50 Bit        Muxes := 1     
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 7     
+	   9 Input     32 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 8     
+	   2 Input     24 Bit        Muxes := 4     
+	   2 Input     23 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 11    
+	   2 Input      6 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module multiplication_normaliser 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module multiplier 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     47 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+Module fpu 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module mem 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module fadd_align 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     50 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_align_cal 
+Detailed RTL Component Info : 
++---Registers : 
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module fadd_cal 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     28 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+Module reg_cal_norm 
+Detailed RTL Component Info : 
++---Registers : 
+	               28 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module fadd_norm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   9 Input     32 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 3     
+Module accelerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module MYIP_TOP 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP i_e1, operation Mode is: A*B.
+DSP Report: operator i_e1 is absorbed into DSP i_e1.
+DSP Report: operator i_e1 is absorbed into DSP i_e1.
+DSP Report: Generating DSP i_e1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator i_e1 is absorbed into DSP i_e1.
+DSP Report: operator i_e1 is absorbed into DSP i_e1.
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[31]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[30]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[29]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[28]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[27]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[26]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[25]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[24]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[23]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[22]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[21]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[20]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[19]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[18]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[17]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[16]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[15]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[14]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[13]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[12]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[11]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[10]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[9]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[8]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[1]
+WARNING: [Synth 8-3331] design accelerator has unconnected port addr[0]
+INFO: [Synth 8-3886] merging instance 'MYIP_TOP_0/accelerator/test/reg_ac/c_inf_nan_frac_reg[22]' (FD) to 'MYIP_TOP_0/accelerator/test/reg_ac/c_is_nan_reg'
+INFO: [Synth 8-3886] merging instance 'MYIP_TOP_0/accelerator/test/reg_ac/c_rm_reg[1]' (FD) to 'MYIP_TOP_0/accelerator/test/reg_ac/c_rm_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MYIP_TOP_0/accelerator/test/reg_ac/c_rm_reg[0] )
+INFO: [Synth 8-3886] merging instance 'MYIP_TOP_0/accelerator/test/reg_cn/n_inf_nan_frac_reg[22]' (FD) to 'MYIP_TOP_0/accelerator/test/reg_cn/n_is_nan_reg'
+INFO: [Synth 8-3886] merging instance 'MYIP_TOP_0/accelerator/test/reg_cn/n_rm_reg[1]' (FD) to 'MYIP_TOP_0/accelerator/test/reg_cn/n_rm_reg[0]'
+INFO: [Synth 8-3886] merging instance 'MYIP_TOP_0/accelerator/test/reg_cn/n_rm_reg[0]' (FD) to 'MYIP_TOP_0/accelerator/test/reg_ac/c_rm_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\MYIP_TOP_0/accelerator/test/reg_ac/c_rm_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[47]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[46]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[22]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[21]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[20]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[19]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[18]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[17]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[16]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[15]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[14]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[13]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[12]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[11]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[10]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[9]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[8]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[7]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[6]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[5]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[4]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/norm1/out_m_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[47]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[17]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[16]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[15]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[14]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[13]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[12]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[11]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[10]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[9]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[8]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[7]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[6]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[5]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[4]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[3]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[2]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[1]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/M1/i_m_reg[0]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/mpy/o_mantissa_reg[23]) is unused and will be removed from module system.
+WARNING: [Synth 8-3332] Sequential element (MYIP_TOP_0/accelerator/test/reg_ac/c_rm_reg[0]) is unused and will be removed from module system.
+INFO: [Synth 8-3886] merging instance 'MYIP_TOP_0i_1/MYIP_TOP_0/accelerator/cnt_reg[7]' (FDC) to 'MYIP_TOP_0i_1/MYIP_TOP_0/accelerator/cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'MYIP_TOP_0i_1/MYIP_TOP_0/accelerator/cnt_reg[5]' (FDC) to 'MYIP_TOP_0i_1/MYIP_TOP_0/accelerator/cnt_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MYIP_TOP_0i_1/\MYIP_TOP_0/accelerator/cnt_reg[6] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 896.402 ; gain = 549.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                            | Inference | Size (Depth x Width) | Primitives      | 
++------------+---------------------------------------+-----------+----------------------+-----------------+
+|system      | MYIP_TOP_0/accelerator/memory/mem_reg | Implied   | 64 x 32              | RAM64X1D x 32   | 
++------------+---------------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|multiplier  | A*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|multiplier  | (PCIN>>17)+A*B | 25     | 8      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'MYIP_TOP_0/accelerator/clkgene/clk_in1' to pin 'axi_ahblite_bridge_0/bbstub_M_AHB_HCLK/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'MYIP_TOP_0/accelerator/clkgene/clkout' to pin 'MYIP_TOP_0/accelerator/clkgene/bbstub_clkout/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'MYIP_TOP_0/accelerator/clkgene/clk_in1' to 'MYIP_TOP_0/hwrite_reg_reg/C'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 916.332 ; gain = 569.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 982.738 ; gain = 635.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                            | Inference | Size (Depth x Width) | Primitives      | 
++------------+---------------------------------------+-----------+----------------------+-----------------+
+|system      | MYIP_TOP_0/accelerator/memory/mem_reg | Implied   | 64 x 32              | RAM64X1D x 32   | 
++------------+---------------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_599/O (LUT3)
+     1: i_599/I2 (LUT3)
+     2: i_147/O (LUT5)
+     3: i_147/I4 (LUT5)
+     4: i_599/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_599"
+Found timing loop:
+     0: i_599/O (LUT3)
+     1: i_599/I1 (LUT3)
+     2: i_157/O (LUT4)
+     3: i_157/I0 (LUT4)
+     4: i_599/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_599"
+Found timing loop:
+     0: i_606/O (LUT2)
+     1: i_606/I1 (LUT2)
+     2: i_1014/O (LUT6)
+     3: i_1014/I5 (LUT6)
+     4: i_606/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_606"
+Found timing loop:
+     0: i_606/O (LUT2)
+     1: i_606/I0 (LUT2)
+     2: i_119/O (LUT6)
+     3: i_119/I1 (LUT6)
+     4: i_606/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I0 -to O i_606"
+Found timing loop:
+     0: i_625/O (LUT3)
+     1: i_625/I2 (LUT3)
+     2: i_122/O (LUT5)
+     3: i_122/I4 (LUT5)
+     4: i_625/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_625"
+Found timing loop:
+     0: i_625/O (LUT3)
+     1: i_625/I1 (LUT3)
+     2: i_166/O (LUT4)
+     3: i_166/I0 (LUT4)
+     4: i_625/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_625"
+Found timing loop:
+     0: i_624/O (LUT3)
+     1: i_624/I2 (LUT3)
+     2: i_123/O (LUT5)
+     3: i_123/I4 (LUT5)
+     4: i_624/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_624"
+Found timing loop:
+     0: i_624/O (LUT3)
+     1: i_624/I1 (LUT3)
+     2: i_165/O (LUT4)
+     3: i_165/I0 (LUT4)
+     4: i_624/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_624"
+Found timing loop:
+     0: i_623/O (LUT3)
+     1: i_623/I2 (LUT3)
+     2: i_124/O (LUT5)
+     3: i_124/I4 (LUT5)
+     4: i_623/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_623"
+Found timing loop:
+     0: i_623/O (LUT3)
+     1: i_623/I1 (LUT3)
+     2: i_175/O (LUT4)
+     3: i_175/I0 (LUT4)
+     4: i_623/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_623"
+Found timing loop:
+     0: i_622/O (LUT3)
+     1: i_622/I2 (LUT3)
+     2: i_125/O (LUT5)
+     3: i_125/I4 (LUT5)
+     4: i_622/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_622"
+Found timing loop:
+     0: i_622/O (LUT3)
+     1: i_622/I1 (LUT3)
+     2: i_177/O (LUT4)
+     3: i_177/I0 (LUT4)
+     4: i_622/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_622"
+Found timing loop:
+     0: i_621/O (LUT3)
+     1: i_621/I2 (LUT3)
+     2: i_126/O (LUT5)
+     3: i_126/I4 (LUT5)
+     4: i_621/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_621"
+Found timing loop:
+     0: i_621/O (LUT3)
+     1: i_621/I1 (LUT3)
+     2: i_167/O (LUT4)
+     3: i_167/I0 (LUT4)
+     4: i_621/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_621"
+Found timing loop:
+     0: i_620/O (LUT3)
+     1: i_620/I2 (LUT3)
+     2: i_127/O (LUT5)
+     3: i_127/I4 (LUT5)
+     4: i_620/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_620"
+Found timing loop:
+     0: i_620/O (LUT3)
+     1: i_620/I1 (LUT3)
+     2: i_185/O (LUT4)
+     3: i_185/I0 (LUT4)
+     4: i_620/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_620"
+Found timing loop:
+     0: i_619/O (LUT3)
+     1: i_619/I2 (LUT3)
+     2: i_128/O (LUT5)
+     3: i_128/I4 (LUT5)
+     4: i_619/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_619"
+Found timing loop:
+     0: i_619/O (LUT3)
+     1: i_619/I1 (LUT3)
+     2: i_171/O (LUT4)
+     3: i_171/I0 (LUT4)
+     4: i_619/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_619"
+Found timing loop:
+     0: i_618/O (LUT3)
+     1: i_618/I2 (LUT3)
+     2: i_129/O (LUT5)
+     3: i_129/I4 (LUT5)
+     4: i_618/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_618"
+Found timing loop:
+     0: i_618/O (LUT3)
+     1: i_618/I1 (LUT3)
+     2: i_180/O (LUT4)
+     3: i_180/I0 (LUT4)
+     4: i_618/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_618"
+Found timing loop:
+     0: i_617/O (LUT3)
+     1: i_617/I2 (LUT3)
+     2: i_130/O (LUT5)
+     3: i_130/I4 (LUT5)
+     4: i_617/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_617"
+Found timing loop:
+     0: i_617/O (LUT3)
+     1: i_617/I1 (LUT3)
+     2: i_179/O (LUT4)
+     3: i_179/I0 (LUT4)
+     4: i_617/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_617"
+Found timing loop:
+     0: i_616/O (LUT3)
+     1: i_616/I2 (LUT3)
+     2: i_131/O (LUT5)
+     3: i_131/I4 (LUT5)
+     4: i_616/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_616"
+Found timing loop:
+     0: i_616/O (LUT3)
+     1: i_616/I1 (LUT3)
+     2: i_182/O (LUT4)
+     3: i_182/I0 (LUT4)
+     4: i_616/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_616"
+Found timing loop:
+     0: i_615/O (LUT3)
+     1: i_615/I2 (LUT3)
+     2: i_132/O (LUT5)
+     3: i_132/I4 (LUT5)
+     4: i_615/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_615"
+Found timing loop:
+     0: i_615/O (LUT3)
+     1: i_615/I1 (LUT3)
+     2: i_168/O (LUT4)
+     3: i_168/I0 (LUT4)
+     4: i_615/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_615"
+Found timing loop:
+     0: i_614/O (LUT3)
+     1: i_614/I2 (LUT3)
+     2: i_133/O (LUT5)
+     3: i_133/I4 (LUT5)
+     4: i_614/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_614"
+Found timing loop:
+     0: i_614/O (LUT3)
+     1: i_614/I1 (LUT3)
+     2: i_186/O (LUT4)
+     3: i_186/I0 (LUT4)
+     4: i_614/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_614"
+Found timing loop:
+     0: i_613/O (LUT3)
+     1: i_613/I2 (LUT3)
+     2: i_134/O (LUT5)
+     3: i_134/I4 (LUT5)
+     4: i_613/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_613"
+Found timing loop:
+     0: i_613/O (LUT3)
+     1: i_613/I1 (LUT3)
+     2: i_169/O (LUT4)
+     3: i_169/I0 (LUT4)
+     4: i_613/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_613"
+Found timing loop:
+     0: i_612/O (LUT3)
+     1: i_612/I2 (LUT3)
+     2: i_135/O (LUT5)
+     3: i_135/I4 (LUT5)
+     4: i_612/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_612"
+Found timing loop:
+     0: i_612/O (LUT3)
+     1: i_612/I1 (LUT3)
+     2: i_170/O (LUT4)
+     3: i_170/I0 (LUT4)
+     4: i_612/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_612"
+Found timing loop:
+     0: i_611/O (LUT3)
+     1: i_611/I2 (LUT3)
+     2: i_136/O (LUT5)
+     3: i_136/I4 (LUT5)
+     4: i_611/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_611"
+Found timing loop:
+     0: i_611/O (LUT3)
+     1: i_611/I1 (LUT3)
+     2: i_181/O (LUT4)
+     3: i_181/I0 (LUT4)
+     4: i_611/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_611"
+Found timing loop:
+     0: i_610/O (LUT3)
+     1: i_610/I2 (LUT3)
+     2: i_137/O (LUT5)
+     3: i_137/I4 (LUT5)
+     4: i_610/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_610"
+Found timing loop:
+     0: i_610/O (LUT3)
+     1: i_610/I1 (LUT3)
+     2: i_178/O (LUT4)
+     3: i_178/I0 (LUT4)
+     4: i_610/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_610"
+Found timing loop:
+     0: i_609/O (LUT3)
+     1: i_609/I2 (LUT3)
+     2: i_138/O (LUT5)
+     3: i_138/I4 (LUT5)
+     4: i_609/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_609"
+Found timing loop:
+     0: i_609/O (LUT3)
+     1: i_609/I1 (LUT3)
+     2: i_184/O (LUT4)
+     3: i_184/I0 (LUT4)
+     4: i_609/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_609"
+Found timing loop:
+     0: i_608/O (LUT3)
+     1: i_608/I2 (LUT3)
+     2: i_139/O (LUT5)
+     3: i_139/I4 (LUT5)
+     4: i_608/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_608"
+Found timing loop:
+     0: i_608/O (LUT3)
+     1: i_608/I1 (LUT3)
+     2: i_173/O (LUT4)
+     3: i_173/I0 (LUT4)
+     4: i_608/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_608"
+Found timing loop:
+     0: i_607/O (LUT3)
+     1: i_607/I2 (LUT3)
+     2: i_140/O (LUT5)
+     3: i_140/I4 (LUT5)
+     4: i_607/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_607"
+Found timing loop:
+     0: i_607/O (LUT3)
+     1: i_607/I1 (LUT3)
+     2: i_183/O (LUT4)
+     3: i_183/I0 (LUT4)
+     4: i_607/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_607"
+Found timing loop:
+     0: i_605/O (LUT3)
+     1: i_605/I2 (LUT3)
+     2: i_141/O (LUT5)
+     3: i_141/I4 (LUT5)
+     4: i_605/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_605"
+Found timing loop:
+     0: i_605/O (LUT3)
+     1: i_605/I1 (LUT3)
+     2: i_172/O (LUT4)
+     3: i_172/I0 (LUT4)
+     4: i_605/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_605"
+Found timing loop:
+     0: i_604/O (LUT3)
+     1: i_604/I2 (LUT3)
+     2: i_142/O (LUT5)
+     3: i_142/I4 (LUT5)
+     4: i_604/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_604"
+Found timing loop:
+     0: i_604/O (LUT3)
+     1: i_604/I1 (LUT3)
+     2: i_174/O (LUT4)
+     3: i_174/I0 (LUT4)
+     4: i_604/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_604"
+Found timing loop:
+     0: i_603/O (LUT3)
+     1: i_603/I2 (LUT3)
+     2: i_143/O (LUT5)
+     3: i_143/I4 (LUT5)
+     4: i_603/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_603"
+Found timing loop:
+     0: i_603/O (LUT3)
+     1: i_603/I1 (LUT3)
+     2: i_176/O (LUT4)
+     3: i_176/I0 (LUT4)
+     4: i_603/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_603"
+Found timing loop:
+     0: i_602/O (LUT3)
+     1: i_602/I2 (LUT3)
+     2: i_144/O (LUT5)
+     3: i_144/I4 (LUT5)
+     4: i_602/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_602"
+Found timing loop:
+     0: i_602/O (LUT3)
+     1: i_602/I1 (LUT3)
+     2: i_164/O (LUT4)
+     3: i_164/I0 (LUT4)
+     4: i_602/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_602"
+Found timing loop:
+     0: i_601/O (LUT3)
+     1: i_601/I2 (LUT3)
+     2: i_145/O (LUT5)
+     3: i_145/I4 (LUT5)
+     4: i_601/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_601"
+Found timing loop:
+     0: i_601/O (LUT3)
+     1: i_601/I1 (LUT3)
+     2: i_158/O (LUT4)
+     3: i_158/I0 (LUT4)
+     4: i_601/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_601"
+Found timing loop:
+     0: i_600/O (LUT3)
+     1: i_600/I2 (LUT3)
+     2: i_146/O (LUT5)
+     3: i_146/I4 (LUT5)
+     4: i_600/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_600"
+Found timing loop:
+     0: i_600/O (LUT3)
+     1: i_600/I1 (LUT3)
+     2: i_162/O (LUT4)
+     3: i_162/I0 (LUT4)
+     4: i_600/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_600"
+Found timing loop:
+     0: i_598/O (LUT3)
+     1: i_598/I2 (LUT3)
+     2: i_148/O (LUT5)
+     3: i_148/I4 (LUT5)
+     4: i_598/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_598"
+Found timing loop:
+     0: i_598/O (LUT3)
+     1: i_598/I1 (LUT3)
+     2: i_161/O (LUT4)
+     3: i_161/I0 (LUT4)
+     4: i_598/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_598"
+Found timing loop:
+     0: i_597/O (LUT3)
+     1: i_597/I2 (LUT3)
+     2: i_149/O (LUT5)
+     3: i_149/I4 (LUT5)
+     4: i_597/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_597"
+Found timing loop:
+     0: i_597/O (LUT3)
+     1: i_597/I1 (LUT3)
+     2: i_159/O (LUT4)
+     3: i_159/I0 (LUT4)
+     4: i_597/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_597"
+Found timing loop:
+     0: i_596/O (LUT3)
+     1: i_596/I2 (LUT3)
+     2: i_150/O (LUT5)
+     3: i_150/I4 (LUT5)
+     4: i_596/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_596"
+Found timing loop:
+     0: i_596/O (LUT3)
+     1: i_596/I1 (LUT3)
+     2: i_160/O (LUT4)
+     3: i_160/I0 (LUT4)
+     4: i_596/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_596"
+Found timing loop:
+     0: i_595/O (LUT3)
+     1: i_595/I2 (LUT3)
+     2: i_151/O (LUT5)
+     3: i_151/I4 (LUT5)
+     4: i_595/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_595"
+Found timing loop:
+     0: i_595/O (LUT3)
+     1: i_595/I1 (LUT3)
+     2: i_163/O (LUT4)
+     3: i_163/I0 (LUT4)
+     4: i_595/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_595"
+Found timing loop:
+     0: i_594/O (LUT3)
+     1: i_594/I2 (LUT3)
+     2: i_152/O (LUT5)
+     3: i_152/I4 (LUT5)
+     4: i_594/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I2 -to O i_594"
+Found timing loop:
+     0: i_594/O (LUT3)
+     1: i_594/I1 (LUT3)
+     2: i_156/O (LUT4)
+     3: i_156/I0 (LUT4)
+     4: i_594/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/code/system.v:8]
+Inferred a: "set_disable_timing -from I1 -to O i_594"
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1003.813 ; gain = 656.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \MYIP_TOP_0/accelerator/clkgene  has unconnected pin reset
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_3 has unconnected pin S_AXI_AWLEN[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_3 has unconnected pin S_AXI_AWLEN[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_3 has unconnected pin S_AXI_AWLEN[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_3 has unconnected pin S_AXI_AWLEN[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_3 has unconnected pin S_AXI_ARLEN[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_3 has unconnected pin S_AXI_ARLEN[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_3 has unconnected pin S_AXI_ARLEN[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_3 has unconnected pin S_AXI_ARLEN[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[63]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[62]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[61]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[60]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[59]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[58]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[57]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[56]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[55]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[54]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[53]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[52]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[51]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[50]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[49]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[48]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[47]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[46]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[45]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[44]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[43]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[42]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[41]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[40]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[39]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[38]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[37]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[36]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[35]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[34]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[33]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WDATA[32]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WSTRB[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WSTRB[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WSTRB[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_1 has unconnected pin S_AXI_WSTRB[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_0 has unconnected pin S_AXI_AWLEN[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_0 has unconnected pin S_AXI_AWLEN[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_0 has unconnected pin S_AXI_AWLEN[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_0 has unconnected pin S_AXI_AWLEN[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_0 has unconnected pin S_AXI_ARLEN[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_0 has unconnected pin S_AXI_ARLEN[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_0 has unconnected pin S_AXI_ARLEN[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module axi_interconnect_0 has unconnected pin S_AXI_ARLEN[4]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1003.813 ; gain = 656.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1003.813 ; gain = 656.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[6]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[6]_i_2 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i__carry__0_i_5/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[5]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[5]_i_2 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i__carry__0_i_6/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[4]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[4]_i_2 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i__carry__0_i_7/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[3]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[3]_i_2 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i__carry_i_5/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[2]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[2]_i_2 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i__carry_i_6/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[1]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[1]_i_2 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i__carry_i_7/O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[0]_i_3 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_exp[0]_i_2 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_large_frac[22]_i_4 /O'
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \c_large_frac[22]_i_2 /O'
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1003.813 ; gain = 656.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1003.813 ; gain = 656.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1003.813 ; gain = 656.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1003.813 ; gain = 656.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------+----------+
+|      |BlackBox name                       |Instances |
++------+------------------------------------+----------+
+|1     |system_vga_flyinglogo_0_wrapper     |         1|
+|2     |system_util_vector_logic_0_wrapper  |         1|
+|3     |system_processing_system7_0_wrapper |         1|
+|4     |system_clock_generator_0_wrapper    |         1|
+|5     |system_axi_vdma_0_wrapper           |         1|
+|6     |system_axi_spdif_tx_0_wrapper       |         1|
+|7     |system_axi_interconnect_3_wrapper   |         1|
+|8     |system_axi_interconnect_2_wrapper   |         1|
+|9     |system_axi_interconnect_1_wrapper   |         1|
+|10    |system_axi_interconnect_0_wrapper   |         1|
+|11    |system_axi_iic_0_wrapper            |         1|
+|12    |system_axi_hdmi_tx_16b_0_wrapper    |         1|
+|13    |system_axi_dma_0_wrapper            |         1|
+|14    |system_axi_clkgen_0_wrapper         |         1|
+|15    |system_axi_ahblite_bridge_0_wrapper |         1|
+|16    |clkwiz0                             |         1|
++------+------------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------------+------+
+|      |Cell                                |Count |
++------+------------------------------------+------+
+|1     |clkwiz0                             |     1|
+|2     |system_axi_ahblite_bridge_0_wrapper |     1|
+|3     |system_axi_clkgen_0_wrapper         |     1|
+|4     |system_axi_dma_0_wrapper            |     1|
+|5     |system_axi_hdmi_tx_16b_0_wrapper    |     1|
+|6     |system_axi_iic_0_wrapper            |     1|
+|7     |system_axi_interconnect_0_wrapper   |     1|
+|8     |system_axi_interconnect_1_wrapper   |     1|
+|9     |system_axi_interconnect_2_wrapper   |     1|
+|10    |system_axi_interconnect_3_wrapper   |     1|
+|11    |system_axi_spdif_tx_0_wrapper       |     1|
+|12    |system_axi_vdma_0_wrapper           |     1|
+|13    |system_clock_generator_0_wrapper    |     1|
+|14    |system_processing_system7_0_wrapper |     1|
+|15    |system_util_vector_logic_0_wrapper  |     1|
+|16    |system_vga_flyinglogo_0_wrapper     |     1|
+|17    |BUFG                                |     3|
+|18    |CARRY4                              |    27|
+|19    |DSP48E1                             |     1|
+|20    |DSP48E1_1                           |     1|
+|21    |LUT1                                |     8|
+|22    |LUT2                                |    79|
+|23    |LUT3                                |   221|
+|24    |LUT4                                |   124|
+|25    |LUT5                                |   247|
+|26    |LUT6                                |   302|
+|27    |RAM64X1D                            |    32|
+|28    |FDCE                                |    48|
+|29    |FDRE                                |   231|
+|30    |LD                                  |   132|
+|31    |IBUF                                |     2|
+|32    |IOBUF                               |    62|
+|33    |OBUF                                |    35|
++------+------------------------------------+------+
+
+Report Instance Areas: 
++------+----------------------+--------------------------+------+
+|      |Instance              |Module                    |Cells |
++------+----------------------+--------------------------+------+
+|1     |top                   |                          | 14499|
+|2     |  MYIP_TOP_0          |MYIP_TOP                  |  1455|
+|3     |    accelerator       |accelerator               |  1413|
+|4     |      memory          |mem                       |   144|
+|5     |      mpy             |fpu                       |   351|
+|6     |        M1            |multiplier                |   142|
+|7     |          norm1       |multiplication_normaliser |    73|
+|8     |      test            |pipelined_fpadder         |   755|
+|9     |        calculation   |fadd_cal                  |    27|
+|10    |        normalization |fadd_norm                 |     1|
+|11    |        alignment     |fadd_align                |   159|
+|12    |        reg_ac        |reg_align_cal             |   183|
+|13    |        reg_cn        |reg_cal_norm              |   385|
++------+----------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1003.813 ; gain = 656.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 117 critical warnings and 100 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1003.813 ; gain = 271.488
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 1003.813 ; gain = 656.625
+INFO: [Project 1-571] Translating synthesized netlist
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_vga_flyinglogo_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_vga_flyinglogo_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_vga_flyinglogo_0_wrapper.edif ...
+ngc2edif: Total memory usage is 99860 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_vga_flyinglogo_0_wrapper.ngc' for (cell view 'system_vga_flyinglogo_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_vga_flyinglogo_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_vga_flyinglogo_0_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_util_vector_logic_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_util_vector_logic_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_util_vector_logic_0_wrapper.edif ...
+ngc2edif: Total memory usage is 99156 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_util_vector_logic_0_wrapper.ngc' for (cell view 'system_util_vector_logic_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_util_vector_logic_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_util_vector_logic_0_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_processing_system7_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_processing_system7_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_processing_system7_0_wrapper.edif ...
+ngc2edif: Total memory usage is 103188 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_processing_system7_0_wrapper.ngc' for (cell view 'system_processing_system7_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_processing_system7_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_processing_system7_0_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_clock_generator_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_clock_generator_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_clock_generator_0_wrapper.edif ...
+ngc2edif: Total memory usage is 99412 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_clock_generator_0_wrapper.ngc' for (cell view 'system_clock_generator_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_clock_generator_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_clock_generator_0_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_vdma_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_vdma_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/sig_cmd2mstr_c
+   ommand[67 : 0] on block system_axi_vdma_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata[65 :
+   0] on block system_axi_vdma_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/GEN_SPRT_FOR_MM2S.MM2S_REGISTER_MODULE_I/I_DMA_REGISTER/dmacr_i[6
+   : 0] on block system_axi_vdma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL
+   /sig_cmd_fifo_data_out[35 : 0] on block system_axi_vdma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig
+   _xfer_end_strb_im2[6 : 1] on block system_axi_vdma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/si
+   g_aq_fifo_data_out[50 : 4] on block system_axi_vdma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/VIDEO_GENLOCK_I/Msub_rvc_frame_r
+   ef_in_lut[2 : 0] on block system_axi_vdma_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_SM/cmnd_data[63 : 0] on block
+   system_axi_vdma_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_vdma_0/GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata[71]_cm
+   nd_data[71]_mux_1_OUT[65 : 0] on block system_axi_vdma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_vdma_0_wrapper.edif ...
+ngc2edif: Total memory usage is 112404 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_axi_vdma_0_wrapper.ngc' for (cell view 'system_axi_vdma_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_vdma_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_vdma_0_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_spdif_tx_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_spdif_tx_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi_spdif_tx_0/ipif_Bus2IP_WrCE[7 : 0]
+   on block system_axi_spdif_tx_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_spdif_tx_0/ipif_Bus2IP_RdCE[7 : 0]
+   on block system_axi_spdif_tx_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_spdif_tx_0_wrapper.edif ...
+ngc2edif: Total memory usage is 100244 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_axi_spdif_tx_0_wrapper.ngc' for (cell view 'system_axi_spdif_tx_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_spdif_tx_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_spdif_tx_0_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_interconnect_3_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_interconnect_3_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_axi_interconnect_3_wrapper.edif ...
+ngc2edif: Total memory usage is 99604 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_3_wrapper.ngc' for (cell view 'system_axi_interconnect_3_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_3_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_3_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_interconnect_2_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_interconnect_2_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/n
+   gwrdrst.grst.rd_rst_reg<2 : 0> on block
+   system_axi_interconnect_2_wrapper_fifo_generator_v9_1_3 is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_2_wrapper_fifo_generator_v9_1_2 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_2_wrapper_fifo_generator_v9_1_1_NO1 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_2_wrapper_fifo_generator_v9_1_1 is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_interconnect_2_wrapper.edif ...
+ngc2edif: Total memory usage is 103188 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_2_wrapper.ngc' for (cell view 'system_axi_interconnect_2_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_2_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_2_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_interconnect_1_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_interconnect_1_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/n
+   gwrdrst.grst.rd_rst_reg<2 : 0> on block
+   system_axi_interconnect_1_wrapper_fifo_generator_v9_1_3 is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_1_wrapper_fifo_generator_v9_1_2 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_1_wrapper_fifo_generator_v9_1_1_NO1 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg<2 :
+   0> on block system_axi_interconnect_1_wrapper_fifo_generator_v9_1_1 is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arb
+   iter_ar/m_mesg_i<62 : 0> on block system_axi_interconnect_1_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arb
+   iter_aw/m_mesg_i<62 : 1> on block system_axi_interconnect_1_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/si_converter_bank/gen_conv_slot[1].gen_upsizer.upsizer_ins
+   t/si_register_slice_inst/ar_pipe/storage_data1<61 : 0> on block
+   system_axi_interconnect_1_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/si_converter_bank/gen_conv_slot[0].gen_upsizer.upsizer_ins
+   t/si_register_slice_inst/ar_pipe/storage_data1<61 : 0> on block
+   system_axi_interconnect_1_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/si_converter_bank/gen_conv_slot[0].gen_upsizer.upsizer_ins
+   t/si_register_slice_inst/aw_pipe/storage_data1<61 : 0> on block
+   system_axi_interconnect_1_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slav
+   e_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/n0063<10 : 0> on block
+   system_axi_interconnect_1_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_mast
+   er_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/n0053<10 : 0> on
+   block system_axi_interconnect_1_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arb
+   iter_ar/m_mesg_mux<62 : 1> on block system_axi_interconnect_1_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_interconnect_1_wrapper.edif ...
+ngc2edif: Total memory usage is 111572 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_1_wrapper.ngc' for (cell view 'system_axi_interconnect_1_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_1_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_1_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_interconnect_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_interconnect_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_a
+   rbiter_inst/m_amesg_i<65 : 0> on block system_axi_interconnect_0_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_interconnect_0/cb_mf_awvalid<5 : 2>
+   on block system_axi_interconnect_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_a
+   rbiter_inst/s_amesg<65 : 0> on block system_axi_interconnect_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_interconnect_0_wrapper.edif ...
+ngc2edif: Total memory usage is 102292 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_axi_interconnect_0_wrapper.ngc' for (cell view 'system_axi_interconnect_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_interconnect_0_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_iic_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_iic_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdat
+   a_i[31 : 0] on block system_axi_iic_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_iic_0/X_IIC/Bus2IIC_WrCE[8 : 0] on
+   block system_axi_iic_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/AXI_IP2Bus_Data[31 : 0] on block
+   system_axi_iic_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/AXI_Bus2IP_WrCE[16 : 10] on block
+   system_axi_iic_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/
+   cs_out_i[2 : 0] on block system_axi_iic_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/
+   ce_expnd_i[34 : 7] on block system_axi_iic_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/REG_INTERFACE_I/timing_param_thddat_i[9]_GND_62_o_mux_91_OUT[
+   8 : 0] on block system_axi_iic_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_iic_0/X_IIC/REG_INTERFACE_I/timing_param_thdsta_i[9]_GND_62_o_mux_71_OUT[
+   3 : 1] on block system_axi_iic_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_iic_0_wrapper.edif ...
+ngc2edif: Total memory usage is 100116 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_axi_iic_0_wrapper.ngc' for (cell view 'system_axi_iic_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_iic_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_iic_0_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_hdmi_tx_16b_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_hdmi_tx_16b_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi_hdmi_tx_16b_0/ipif_Bus2IP_WrCE<31 :
+   0> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_hdmi_tx_16b_0/ipif_Bus2IP_RdCE<31 :
+   2> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/up_rwce_s<30 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/d
+   ata_p<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/d
+   ata_p<23 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c1/d
+   ata_p<23 : 3> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/d
+   ata_p<23 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   2_data_p_0<23 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<23 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_2[23]_p1_data_p_3[23]_add_23_OUT<23 : 4> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/d
+   ata_b[7]_GND_56_o_wide_mux_11_OUT<23 : 6> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/d
+   ata_b[5]_GND_56_o_wide_mux_10_OUT<21 : 4> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/d
+   ata_b[3]_GND_56_o_wide_mux_9_OUT<19 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/d
+   ata_b[1]_p1_data_a_1n_s[23]_wide_mux_8_OUT<11 : 8> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   2_data_p_1<23 : 4> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   2_data_p_0<23 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_2<21 : 5> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<23 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_2[23]_p1_data_p_3[23]_add_23_OUT<23 : 5> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/d
+   ata_b[7]_GND_56_o_wide_mux_11_OUT<23 : 7> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/d
+   ata_b[5]_GND_56_o_wide_mux_10_OUT<21 : 5> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/d
+   ata_b[3]_GND_56_o_wide_mux_9_OUT<19 : 3> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/d
+   ata_b[1]_p1_data_a_1n_s[23]_wide_mux_8_OUT<11 : 8> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   2_data_p_1<23 : 5> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_3<23 : 7> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_1<19 : 3> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   2_data_p_0<23 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_2<21 : 6> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<23 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_2[23]_p1_data_p_3[23]_add_23_OUT<23 : 6> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/d
+   ata_b[7]_GND_56_o_wide_mux_11_OUT<23 : 8> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/d
+   ata_b[5]_GND_56_o_wide_mux_10_OUT<21 : 6> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/d
+   ata_b[3]_GND_56_o_wide_mux_9_OUT<19 : 4> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   2_data_p_1<23 : 6> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_3<23 : 8> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_1<19 : 4> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c1/p2
+   _data_p_0<23 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c1/p1
+   _data_p_0[23]_p1_data_p_4[23]_add_22_OUT<23 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c1/p2
+   _data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c1/p1
+   _data_p_2[23]_p1_data_p_3[23]_add_23_OUT<23 : 6> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c1/p2
+   _data_p_1<23 : 6> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c2/p1
+   _data_p_0[23]_p1_data_p_4[23]_add_22_OUT<23 : 8> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c2/p2
+   _data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 8> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c2/p1
+   _data_p_2[23]_p1_data_p_3[23]_add_23_OUT<18 : 12> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c2/p2
+   _data_p_1<18 : 12> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c2/p2
+   _data_p_0<23 : 8> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c3/p2
+   _data_p_0<15 : 3> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c3/p1
+   _data_p_0[23]_p1_data_p_4[23]_add_22_OUT<15 : 3> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c3/p2
+   _data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 3> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c3/p1
+   _data_p_2[23]_p1_data_p_3[23]_add_23_OUT<23 : 7> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_mul_c3/p2
+   _data_p_1<23 : 7> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c1/p
+   2_data_p_0<17 : 3> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_2<21 : 4> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_0<17 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c1/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<17 : 3> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c1/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 3> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_3<23 : 6> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c1/p
+   1_data_p_1<19 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/p
+   2_data_p_0<18 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c2/p
+   1_data_p_0<17 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<18 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/p
+   1_data_p_2[23]_p1_data_p_3[23]_add_23_OUT<17 : 5> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c2/p
+   2_data_p_1<17 : 5> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c3/p
+   2_data_p_0<16 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_mul_c3/p
+   1_data_p_0<17 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c3/p
+   1_data_p_0[23]_p1_data_p_4[23]_add_22_OUT<16 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c3/p
+   2_data_p_0[23]_p2_data_p_1[23]_add_28_OUT<23 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c3/p
+   1_data_p_2[23]_p1_data_p_3[23]_add_23_OUT<18 : 5> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_mul_c3/p
+   2_data_p_1<18 : 5> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   2_data_0<24 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_2<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_1<23 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_3<24 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_3_n_s<24 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_2_n_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   2_data_0[24]_p2_data_1[24]_add_33_OUT<24 : 12> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_3[24]_p1_data_4[24]_add_28_OUT<24 : 2> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_1[24]_p1_data_2[24]_add_27_OUT<24 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_3_s<24 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   1_data_2_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   3_data<24 : 12> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cr/i_add_c4/p
+   2_data_1<24 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p1
+   _data_1<23 : 2> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p1
+   _data_3<23 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p1
+   _data_3[24]_p1_data_4[24]_add_28_OUT<24 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p1
+   _data_1[24]_p1_data_2[24]_add_27_OUT<24 : 1> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p2
+   _data_1<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p2
+   _data_0<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Y/i_add_c4/p1
+   _data_2<23 : 5> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_3<23 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_2_n_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_1_n_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_3[24]_p1_data_4[24]_add_28_OUT<24 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_1[24]_p1_data_2[24]_add_27_OUT<24 : 0> on block
+   system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_2_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_1_s<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   2_data_1<24 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   2_data_0<24 : 0> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_2<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_csc/i_csc_Cb/i_add_c4/p
+   1_data_1<24 : 1> on block system_axi_hdmi_tx_16b_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_hdmi_tx_16b_0/USER_LOGIC_I/i_hdmi_tx_16b/i_hdmi/i_ss/s444_data_2d<23 : 0>
+   on block system_axi_hdmi_tx_16b_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_hdmi_tx_16b_0_wrapper.edif ...
+ngc2edif: Total memory usage is 111124 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_axi_hdmi_tx_16b_0_wrapper.ngc' for (cell view 'system_axi_hdmi_tx_16b_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_hdmi_tx_16b_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_hdmi_tx_16b_0_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_dma_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_dma_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_MMAP_SKID_BUF/sig_data_reg_out<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_
+   BASIC_WRAPPER/I_ADDR_CNTL/sig_next_len_reg<4 : 2> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.I_MM2S_CMDSTS/s_axis_mm2s_cmd_
+   tdata<65 : 0> on block system_axi_dma_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S
+   _SG_IF/updt_desc_reg2<32 : 0> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/GE
+   N_INCLUDE_STATUS_FIFO.I_STS_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg<7 : 0>
+   on block system_axi_dma_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_MM2S_REGISTERS.I_MM2S_DMA_REGISTER/dmacr_i
+   <2 : 0> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_MNGR/I_UPDT_C
+   MDSTS_IF/s_axis_updt_cmd_tdata<63 : 2> on block system_axi_dma_0_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/s_axis_s2mm_tdata<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_MNGR/I_FTCH_SG/ftch_cmnd_data<
+   63 : 5> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_MNGR/I_FTCH_CMDSTS_IF/s_axis_f
+   tch_cmd_tdata<63 : 5> on block system_axi_dma_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_
+   BASIC_WRAPPER/sig_mstr2addr_len<4 : 2> on block system_axi_dma_0_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_MM2S_BASIC.I_MM2S_
+   BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg<63
+   : 5> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_MNGR/I_UPDT_S
+   G/updt_cmnd_data<37 : 2> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/axi2ip_wrdata<31
+   : 0> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/axi2ip_wrce<4 :
+   0> on block system_axi_dma_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/wrce<4 : 0> on
+   block system_axi_dma_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/axi2ip_wrdata_i<
+   31 : 0> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_AXI_DMA_REG_MODULE/GEN_AXI_LITE_IF.AXI_LITE_IF_I/wdata<31 : 0> on
+   block system_axi_dma_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_STRM_SKID_BUF/sig_data_skid_reg<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_STRM_SKID_BUF/sig_data_skid_mux_out<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_STRM_SKID_BUF/sig_data_reg_out<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg<63
+   : 2> on block system_axi_dma_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_MMAP_SKID_BUF/sig_data_skid_mux_out<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_AXI_DATAMOVER/GEN_S2MM_BASIC.I_S2MM_
+   BASIC_WRAPPER/I_S2MM_MMAP_SKID_BUF/sig_data_skid_reg<31 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/I_SG_FETCH_MNGR/I_FTCH_CMDSTS_IF/s_axis_f
+   tch_cmd_tdata[71]_ftch_cmnd_data[71]_mux_1_OUT<63 : 5> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_MNGR/I_UPDT_S
+   G/Mmux_update_address[31]_ch1_updt_curdesc[31]_mux_22_OUT_rs_A<31 : 0> on
+   block system_axi_dma_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/GEN_SG_ENGINE.I_SG_ENGINE/GEN_DESC_UPDATE.I_SG_UPDATE_MNGR/I_UPDT_C
+   MDSTS_IF/s_axis_updt_cmd_tdata[71]_updt_cmnd_data[71]_mux_1_OUT<63 : 2> on
+   block system_axi_dma_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_CMD_STATUS/I_
+   CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg<63 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_RD_DATA_CNTL/
+   sig_cmd_fifo_data_out<26 : 0> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_MSTR_PCC/sig_
+   xfer_end_strb_im2<3 : 1> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig
+   _aq_fifo_data_out<50 : 4> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S
+   _SM/mm2s_cmnd_data<63 : 0> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.GEN_SCATTER_GATHER_MODE.I_MM2S
+   _SG_IF/desc_reg6<27 : 0> on block system_axi_dma_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_dma_0/I_MM2S_DMA_MNGR/GEN_MM2S_DMA_CONTROL.I_MM2S_CMDSTS/s_axis_mm2s_cmd_
+   tdata[71]_mm2s_cmnd_data[71]_mux_1_OUT<65 : 0> on block
+   system_axi_dma_0_wrapper is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_dma_0_wrapper.edif ...
+ngc2edif: Total memory usage is 108244 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_axi_dma_0_wrapper.ngc' for (cell view 'system_axi_dma_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_dma_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_dma_0_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_clkgen_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_clkgen_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi_clkgen_0/ipif_Bus2IP_WrCE<31 : 0> on
+   block system_axi_clkgen_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_clkgen_0/ipif_Bus2IP_RdCE<20 : 1> on
+   block system_axi_clkgen_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_clkgen_0/USER_LOGIC_I/up_rwce_s<27 :
+   0> on block system_axi_clkgen_0_wrapper is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_clkgen_0/USER_LOGIC_I/i_clkgen/mmcm_rdata<15 : 0> on block
+   system_axi_clkgen_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_clkgen_0/USER_LOGIC_I/i_clkgen/mmcm_rdata_s<15 : 0> on block
+   system_axi_clkgen_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_clkgen_0_wrapper.edif ...
+ngc2edif: Total memory usage is 101140 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_axi_clkgen_0_wrapper.ngc' for (cell view 'system_axi_clkgen_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_clkgen_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_clkgen_0_wrapper_ngc_f49373e3.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_ahblite_bridge_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_ahblite_bridge_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_ahblite_bridge_0/AXI_SLV_IF_MODULE/axi_cache<3 : 0> on block
+   system_axi_ahblite_bridge_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_ahblite_bridge_0/AXI_SLV_IF_MODULE/axi_prot<2 : 0> on block
+   system_axi_ahblite_bridge_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_ahblite_bridge_0/AXI_SLV_IF_MODULE/axi_cache[3]_S_AXI_AWCACHE[3]_mux_25_O
+   UT<3 : 0> on block system_axi_ahblite_bridge_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_ahblite_bridge_0/AXI_SLV_IF_MODULE/axi_prot[2]_S_AXI_AWPROT[2]_mux_21_OUT
+   <2 : 0> on block system_axi_ahblite_bridge_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_ahblite_bridge_0/AHB_MSTR_IF_MODULE/axi_length_burst<10 : 2> on block
+   system_axi_ahblite_bridge_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_ahblite_bridge_0_wrapper.edif ...
+ngc2edif: Total memory usage is 100372 kilobytes
+
+Reading core file 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.srcs/sources_1/imports/vivado_demo/imple/system_axi_ahblite_bridge_0_wrapper.ngc' for (cell view 'system_axi_ahblite_bridge_0_wrapper', library 'work')
+Parsing EDIF File [./.ngc2edfcache/system_axi_ahblite_bridge_0_wrapper_ngc_f49373e3.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/system_axi_ahblite_bridge_0_wrapper_ngc_f49373e3.edif]
+INFO: [Netlist 29-17] Analyzing 10768 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20180321
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7794 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 554 instances
+  FD => FDRE: 1658 instances
+  FDC => FDCE: 372 instances
+  FDE => FDRE: 1785 instances
+  FDP => FDPE: 112 instances
+  FDR => FDRE: 2572 instances
+  FDS => FDSE: 60 instances
+  INV => LUT1: 392 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 62 instances
+  LD => LDCE: 132 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 33 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 20 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 36 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+94 Infos, 204 Warnings, 117 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:35 . Memory (MB): peak = 1016.734 ; gain = 681.020
+INFO: [Common 17-1381] The checkpoint 'D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.201 . Memory (MB): peak = 1016.734 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 14 19:51:32 2018...

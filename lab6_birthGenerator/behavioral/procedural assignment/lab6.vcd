@@ -1,0 +1,69 @@
+$date
+	Thu Apr 19 21:51:09 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module lab6_testbench $end
+$var wire 4 ! out [3:0] $end
+$var reg 3 " in [2:0] $end
+$var integer 32 # i [31:0] $end
+$scope module DUT $end
+$var wire 3 $ in [2:0] $end
+$var reg 4 % out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 %
+b0 $
+b0 #
+b0 "
+b1 !
+$end
+#8000
+b1001 !
+b1001 %
+b1 "
+b1 $
+b1 #
+#16000
+b10 "
+b10 $
+b10 #
+#24000
+b111 !
+b111 %
+b11 "
+b11 $
+b11 #
+#32000
+b0 !
+b0 %
+b100 "
+b100 $
+b100 #
+#40000
+b111 !
+b111 %
+b101 "
+b101 $
+b101 #
+#48000
+b10 !
+b10 %
+b110 "
+b110 $
+b110 #
+#56000
+b1000 !
+b1000 %
+b111 "
+b111 $
+b111 #
+#64000
+b1000 #

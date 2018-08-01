@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clkwiz0_synth_1" LaunchDir="D:/CCU/DigitalSys/DDlab12/Lab12DemoV1.0_3/Lab12Demo.runs/clkwiz0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

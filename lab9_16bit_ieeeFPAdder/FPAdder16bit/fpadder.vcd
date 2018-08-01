@@ -1,0 +1,661 @@
+$date
+	Mon May 21 19:03:33 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module test_bench $end
+$var wire 16 ! result [15:0] $end
+$var reg 16 " a [15:0] $end
+$var reg 16 # b [15:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % clrn $end
+$var reg 1 & en $end
+$scope module test $end
+$var wire 16 ' a [15:0] $end
+$var wire 16 ( b [15:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % clrn $end
+$var wire 1 & e $end
+$var wire 2 ) rm [1:0] $end
+$var wire 1 * sub $end
+$var wire 16 + s [15:0] $end
+$var wire 1 , n_sign $end
+$var wire 2 - n_rm [1:0] $end
+$var wire 1 . n_is_nan $end
+$var wire 1 / n_is_inf $end
+$var wire 10 0 n_inf_nan_frac [9:0] $end
+$var wire 15 1 n_frac [14:0] $end
+$var wire 5 2 n_exp [4:0] $end
+$var wire 14 3 c_small_frac [13:0] $end
+$var wire 1 4 c_sign $end
+$var wire 2 5 c_rm [1:0] $end
+$var wire 1 6 c_op_sub $end
+$var wire 11 7 c_large_frac [10:0] $end
+$var wire 1 8 c_is_nan $end
+$var wire 1 9 c_is_inf $end
+$var wire 10 : c_inf_nan_frac [9:0] $end
+$var wire 15 ; c_frac [14:0] $end
+$var wire 5 < c_exp [4:0] $end
+$var wire 14 = a_small_frac [13:0] $end
+$var wire 1 > a_sign $end
+$var wire 1 ? a_op_sub $end
+$var wire 11 @ a_large_frac [10:0] $end
+$var wire 1 A a_is_nan $end
+$var wire 1 B a_is_inf $end
+$var wire 10 C a_inf_nan_frac [9:0] $end
+$var wire 5 D a_exp [4:0] $end
+$scope module alignment $end
+$var wire 16 E a [15:0] $end
+$var wire 16 F b [15:0] $end
+$var wire 1 G fp_large_is_inf $end
+$var wire 1 H fp_large_is_nan $end
+$var wire 1 I fp_small_is_inf $end
+$var wire 1 J fp_small_is_nan $end
+$var wire 1 ? op_sub $end
+$var wire 1 B s_is_inf $end
+$var wire 1 A s_is_nan $end
+$var wire 1 K small_den_only $end
+$var wire 1 * sub $end
+$var wire 5 L temp_exp [4:0] $end
+$var wire 24 M small_frac50 [23:0] $end
+$var wire 14 N small_frac27 [13:0] $end
+$var wire 11 O small_frac24 [10:0] $end
+$var wire 1 > sign $end
+$var wire 5 P shift_amount [4:0] $end
+$var wire 10 Q nan_frac [9:0] $end
+$var wire 11 R large_frac24 [10:0] $end
+$var wire 10 S inf_nan_frac [9:0] $end
+$var wire 1 T fp_small_hidden_bit $end
+$var wire 1 U fp_small_frac_is_00 $end
+$var wire 1 V fp_small_expo_is_ff $end
+$var wire 16 W fp_small [15:0] $end
+$var wire 1 X fp_large_hidden_bit $end
+$var wire 1 Y fp_large_frac_is_00 $end
+$var wire 1 Z fp_large_expo_is_ff $end
+$var wire 16 [ fp_large [15:0] $end
+$var wire 5 \ exp_diff [4:0] $end
+$var wire 1 ] exchange $end
+$upscope $end
+$scope module calculation $end
+$var wire 14 ^ small_frac27 [13:0] $end
+$var wire 1 6 op_sub $end
+$var wire 11 _ large_frac24 [10:0] $end
+$var wire 15 ` cal_frac [14:0] $end
+$var wire 15 a aligned_small_frac [14:0] $end
+$var wire 15 b aligned_large_frac [14:0] $end
+$upscope $end
+$scope module normalization $end
+$var wire 1 c frac_plus_1 $end
+$var wire 1 d overflow $end
+$var wire 4 e zeros [3:0] $end
+$var wire 5 f temp_exp [4:0] $end
+$var wire 1 , sign $end
+$var wire 16 g s [15:0] $end
+$var wire 2 h rm [1:0] $end
+$var wire 1 . is_nan $end
+$var wire 1 / is_inf $end
+$var wire 10 i inf_nan_frac [9:0] $end
+$var wire 12 j frac_round [11:0] $end
+$var wire 14 k f3 [13:0] $end
+$var wire 14 l f2 [13:0] $end
+$var wire 14 m f1 [13:0] $end
+$var wire 14 n f0 [13:0] $end
+$var wire 5 o exponent [4:0] $end
+$var wire 15 p cal_frac [14:0] $end
+$var reg 5 q exp0 [4:0] $end
+$var reg 14 r frac0 [13:0] $end
+$scope function final_result $end
+$var reg 5 s exponent [4:0] $end
+$var reg 16 t final_result [15:0] $end
+$var reg 10 u fraction [9:0] $end
+$var reg 10 v inf_nan_frac [9:0] $end
+$var reg 1 w is_inf $end
+$var reg 1 x is_nan $end
+$var reg 1 y overflow $end
+$var reg 2 z rm [1:0] $end
+$var reg 1 { sign $end
+$upscope $end
+$upscope $end
+$scope module reg_ac $end
+$var wire 5 | a_exp [4:0] $end
+$var wire 10 } a_inf_nan_frac [9:0] $end
+$var wire 1 B a_is_inf $end
+$var wire 1 A a_is_nan $end
+$var wire 11 ~ a_large_frac [10:0] $end
+$var wire 1 ? a_op_sub $end
+$var wire 2 !" a_rm [1:0] $end
+$var wire 1 > a_sign $end
+$var wire 14 "" a_small_frac [13:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % clrn $end
+$var wire 1 & e $end
+$var reg 5 #" c_exp [4:0] $end
+$var reg 10 $" c_inf_nan_frac [9:0] $end
+$var reg 1 9 c_is_inf $end
+$var reg 1 8 c_is_nan $end
+$var reg 11 %" c_large_frac [10:0] $end
+$var reg 1 6 c_op_sub $end
+$var reg 2 &" c_rm [1:0] $end
+$var reg 1 4 c_sign $end
+$var reg 14 '" c_small_frac [13:0] $end
+$upscope $end
+$scope module reg_cn $end
+$var wire 5 (" c_exp [4:0] $end
+$var wire 15 )" c_frac [14:0] $end
+$var wire 10 *" c_inf_nan_frac [9:0] $end
+$var wire 1 9 c_is_inf $end
+$var wire 1 8 c_is_nan $end
+$var wire 2 +" c_rm [1:0] $end
+$var wire 1 4 c_sign $end
+$var wire 1 $ clk $end
+$var wire 1 % clrn $end
+$var wire 1 & e $end
+$var reg 5 ," n_exp [4:0] $end
+$var reg 15 -" n_frac [14:0] $end
+$var reg 10 ." n_inf_nan_frac [9:0] $end
+$var reg 1 / n_is_inf $end
+$var reg 1 . n_is_nan $end
+$var reg 2 /" n_rm [1:0] $end
+$var reg 1 , n_sign $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 /"
+b0 ."
+b0 -"
+b0 ,"
+b0 +"
+b0 *"
+b0 )"
+b0 ("
+b0 '"
+b0 &"
+b0 %"
+b0 $"
+b0 #"
+b10100000000000 ""
+b0 !"
+b11100000000 ~
+b0 }
+b10001 |
+0{
+b0 z
+0y
+0x
+0w
+b0 v
+b0 u
+b0 t
+b0 s
+b0 r
+b0 q
+b0 p
+b0 o
+b0 n
+b0 m
+b0 l
+b0 k
+b0 j
+b0 i
+b0 h
+b0 g
+b0 f
+b1111 e
+0d
+0c
+b0 b
+b0 a
+b0 `
+b0 _
+b0 ^
+1]
+b0 \
+b100011100000000 [
+0Z
+0Y
+1X
+b100010100000000 W
+0V
+0U
+1T
+b0 S
+b11100000000 R
+b1100000000 Q
+b0 P
+b10100000000 O
+b10100000000000 N
+b101000000000000000000000 M
+b10001 L
+0K
+0J
+0I
+0H
+0G
+b100011100000000 F
+b100010100000000 E
+b10001 D
+b0 C
+0B
+0A
+b11100000000 @
+0?
+0>
+b10100000000000 =
+b0 <
+b0 ;
+b0 :
+09
+08
+b0 7
+06
+b0 5
+04
+b0 3
+b0 2
+b0 1
+b0 0
+0/
+0.
+b0 -
+0,
+b0 +
+0*
+b0 )
+b100011100000000 (
+b100010100000000 '
+0&
+0%
+1$
+b100011100000000 #
+b100010100000000 "
+b0 !
+$end
+#10000
+0$
+#15000
+1&
+1%
+#20000
+b110000000000000 ;
+b110000000000000 `
+b110000000000000 )"
+b10100000000000 a
+b10100000000000 3
+b10100000000000 ^
+b10100000000000 '"
+b11100000000000 b
+b11100000000 7
+b11100000000 _
+b11100000000 %"
+b10001 <
+b10001 #"
+b10001 ("
+1$
+#30000
+0$
+#40000
+b10000000000000 n
+b10000000000000 m
+b10000000000000 l
+b10000000000000 k
+b100101000000000 !
+b100101000000000 +
+b100101000000000 g
+b100101000000000 t
+b1000000000 u
+b10010 s
+b10010 o
+b11000000000 j
+b0 e
+b10010 q
+b11000000000000 r
+b110000000000000 1
+b110000000000000 p
+b110000000000000 -"
+b10001 2
+b10001 f
+b10001 ,"
+1$
+#50000
+0$
+#60000
+1$
+#65000
+b0 n
+b0 m
+b0 u
+b0 l
+b0 !
+b0 +
+b0 g
+b0 t
+b0 s
+b0 k
+b0 j
+b0 o
+b0 ;
+b0 `
+b0 )"
+b1111 e
+b0 r
+b0 q
+b0 a
+b0 3
+b0 ^
+b0 '"
+b0 b
+b0 7
+b0 _
+b0 %"
+b0 <
+b0 #"
+b0 ("
+b0 1
+b0 p
+b0 -"
+b0 2
+b0 f
+b0 ,"
+1?
+b1110000000000 =
+b1110000000000 N
+b1110000000000 ""
+1>
+b11100000000000000000000 M
+b1 P
+b10100000000 @
+b10100000000 R
+b10100000000 ~
+b11100000000 O
+b1 \
+0%
+b1100010100000000 [
+b100001100000000 W
+0&
+b1100010100000000 #
+b1100010100000000 (
+b1100010100000000 F
+b100001100000000 "
+b100001100000000 '
+b100001100000000 E
+#70000
+0$
+#80000
+b110000000000 ;
+b110000000000 `
+b110000000000 )"
+b1110000000000 a
+b1110000000000 3
+b1110000000000 ^
+b1110000000000 '"
+b10100000000000 b
+b10100000000 7
+b10100000000 _
+b10100000000 %"
+16
+b10001 <
+b10001 #"
+b10001 ("
+14
+1&
+1%
+1$
+#90000
+0$
+#100000
+b1000000000 u
+b1111 s
+b11000000000 j
+b1111 o
+b11000000000000 r
+b1111 q
+b11000000000000 n
+b11000000000000 m
+b110000000000 l
+b110000000000 k
+b10 e
+b1011111000000000 !
+b1011111000000000 +
+b1011111000000000 g
+b1011111000000000 t
+1{
+b110000000000 1
+b110000000000 p
+b110000000000 -"
+b10001 2
+b10001 f
+b10001 ,"
+1,
+1$
+#110000
+0$
+#120000
+1$
+#130000
+b0 n
+b0 m
+b0 u
+b0 l
+b0 s
+b0 k
+b0 j
+b0 o
+b0 ;
+b0 `
+b0 )"
+b1111 e
+b0 r
+b0 q
+b0 !
+b0 +
+b0 g
+b0 t
+0{
+b0 a
+b0 3
+b0 ^
+b0 '"
+b0 b
+b0 7
+b0 _
+b0 %"
+06
+b0 <
+b0 #"
+b0 ("
+04
+b0 1
+b0 p
+b0 -"
+b0 2
+b0 f
+b0 ,"
+0,
+0?
+b11111111111000 =
+b11111111111000 N
+b11111111111000 ""
+b111111111110000000000000 M
+b0 P
+b11111111111 @
+b11111111111 R
+b11111111111 ~
+b11110 D
+b11110 L
+b11110 |
+0>
+b11111111111 O
+b0 \
+b1111111111 Q
+0%
+b111101111111111 [
+0]
+b111101111111111 W
+0$
+0&
+b111101111111111 #
+b111101111111111 (
+b111101111111111 F
+b111101111111111 "
+b111101111111111 '
+b111101111111111 E
+#140000
+1$
+#145000
+1&
+1%
+#150000
+0$
+#160000
+b111111111110000 ;
+b111111111110000 `
+b111111111110000 )"
+b11111111111000 a
+b11111111111000 3
+b11111111111000 ^
+b11111111111000 '"
+b11111111111000 b
+b11111111111 7
+b11111111111 _
+b11111111111 %"
+b11110 <
+b11110 #"
+b11110 ("
+1$
+#170000
+0$
+#180000
+b11111111110000 n
+b11111111110000 m
+b11111111110000 l
+b111110000000000 !
+b111110000000000 +
+b111110000000000 g
+b111110000000000 t
+b1111111111 u
+b11111 s
+1y
+b11111111110000 k
+b11111 o
+1d
+b11111111111 j
+b0 e
+b11111 q
+b11111111111000 r
+b111111111110000 1
+b111111111110000 p
+b111111111110000 -"
+b11110 2
+b11110 f
+b11110 ,"
+1$
+#190000
+0$
+#200000
+1$
+#210000
+0$
+#220000
+1$
+#230000
+0$
+#240000
+1$
+#250000
+0$
+#260000
+1$
+#270000
+0$
+#280000
+1$
+#290000
+0$
+#300000
+1$
+#310000
+0$
+#320000
+1$
+#330000
+0$
+#340000
+1$
+#350000
+0$
+#360000
+1$
+#370000
+0$
+#380000
+1$
+#390000
+0$
+#400000
+1$
+#410000
+0$
+#420000
+1$
+#430000
+0$
+#440000
+1$
+#450000
+0$
+#460000
+1$
+#470000
+0$
+#480000
+1$
+#490000
+0$
+#500000
+1$
+#510000
+0$
+#520000
+1$
+#530000
+0$
+#540000
+1$
+#550000
+0$
+#560000
+1$
+#570000
+0$
+#580000
+1$
+#590000
+0$
+#600000
+1$
+#610000
+0$
+#620000
+1$
+#630000
+0$
+#640000
+1$
+#650000
+0$
+#660000
+1$
+#670000
+0$
+#680000
+1$
+#690000
+0$
+#695000
